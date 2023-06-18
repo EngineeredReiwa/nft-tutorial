@@ -1,5 +1,4 @@
 const { ethers } = require("ethers");
-const { Network } = require("@ethersproject/networks");
 
 // Helper method for fetching environment variables from .env
 function getEnvVariable(key, defaultValue) {
