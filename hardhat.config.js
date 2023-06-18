@@ -8,6 +8,7 @@ require("@nomiclabs/hardhat-etherscan");
 
 /* defined tasks */
 require("./scripts/deploy.js");
+require("./scripts/mint.js");
 
 const { ALCHEMY_KEY, ACCOUNT_PRIVATE_KEY } = process.env;
 
