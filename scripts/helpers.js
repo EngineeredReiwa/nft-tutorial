@@ -1,23 +1,6 @@
 const { ethers } = require("ethers");
 const { Network } = require("@ethersproject/networks");
 
-// const matic = {
-//     name: "matic",
-//     chainId: 137,
-//     _defaultProvider: (providers) =>
-//         new providers.JsonRpcProvider("https://rpc-mainnet.maticvigil.com/"),
-// };
-
-const maticmum = {
-    name: "maticmum",
-    chainId: 80001,
-    _defaultProvider: (providers) =>
-        new providers.JsonRpcProvider("https://rpc-mumbai.maticvigil.com/"),
-};
-
-// import those networks where ever you want to use it with getDefaultProvider
-const provider = ethers.getDefaultProvider(maticmum);
-
 // Helper method for fetching environment variables from .env
 function getEnvVariable(key, defaultValue) {
     if (process.env[key]) {
